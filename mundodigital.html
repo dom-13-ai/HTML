@@ -2,52 +2,119 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Mundo Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi mundo digital - Mi sitio web</title>
+    <!-- Referencia a los estilos css compartidos -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header><img src="black-hole.jpg" alt="Encabezado"></header>
+    <header>
+        <img src="black-hole.jpg" alt="Encabezado del sitio">
+    </header>
+
     <nav>
-        <ul>
-            <li><a href="#">Conóceme</a>
-                <ul>
-                    <li><a href="informacion.html">Información personal</a></li>
-                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Segunda parcial</a>
-                <ul>
-                    <li><a href="practica1.html">Práctica uno</a></li>
-                    <li><a href="posiciones.html">Posiciones</a></li>
-                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
-                    <li><a href="comunidad.html">Comunidad</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Tercer parcial</a>
-                <ul>
-                    <li><a href="#">Práctica uno</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="#">Conóceme</a>
+            <ul>
+                <li><a href="informacion.html">Información personal</a></li>
+                <li><a href="pasatiempos.html">Pasatiempos</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Segunda parcial</a>
+            <ul>
+                <li><a href="practica1.html">Práctica uno</a></li>
+                <li><a href="posiciones.html">Posiciones</a></li>
+                <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Tercer parcial</a>
+            <ul>
+                <li><a href="#">Práctica uno</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
     <section>
         <aside class="principal">
-            <h2>Mi Mundo Digital</h2>
-            <p>Exploración de las herramientas y recursos digitales de uso cotidiano.</p>
-            
-            <br><hr><br>
-            <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+            <h2>Mi mundo digital 🌐</h2>
+            <p>Bienvenido a mi sección sobre tecnología. Aquí exploro tres de las áreas del mundo digital que más me interesan e influyen en mi aprendizaje diario.</p>
+
+            <!-- TEMA 1: PROGRAMACIÓN -->
+            <article>
+                <h3>1. 💻 Programación web</h3>
+                <p>La programación es la disciplina que nos permite construir software, aplicaciones y sitios web interactivos. En la especialidad del Bachillerato 8 aprendemos lenguajes como HTML, CSS y JavaScript para estructurar y dar vida a proyectos en Internet.</p>
+                
+                <img src="progra.jpg" alt="Código de programación web" width="100%">
+                
+                <p><strong>Enlace relacionado:</strong> <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs - Guía para desarrolladores</a></p>
+                
+                <p><strong>Video explicativo:</strong></p>
+                <iframe width="100%" height="315" 
+                    src="https://www.youtube.com/embed/Q33KBiDriJY" 
+                    title="Qué es la programación" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </article>
+
+            <hr>
+
+            <!-- TEMA 2: INTELIGENCIA ARTIFICIAL -->
+            <article>
+                <h3>2. 🤖 Inteligencia Artificial</h3>
+                <p>La Inteligencia Artificial (IA) consiste en el desarrollo de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de patrones, el procesamiento de lenguaje natural y la resolución de problemas complejos.</p>
+                
+                <img src="IA.jpg" alt="Inteligencia Artificial" width="100%">
+                
+                <p><strong>Enlace relacionado:</strong> <a href="https://openai.com" target="_blank" rel="noopener noreferrer">Explorar innovaciones en OpenAI</a></p>
+                
+                <p><strong>Video explicativo:</strong></p>
+                <iframe width="100%" height="315" 
+                    src="https://www.youtube.com/embed/8I9pIscJ6x0" 
+                    title="Qué es la Inteligencia Artificial" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </article>
+
+            <hr>
+
+            <!-- TEMA 3: VIDEOJUEGOS -->
+            <article>
+                <h3>3. 🎮 Videojuegos y Motores Gráficos</h3>
+                <p>La industria de los videojuegos combina narrativa, arte digital y programación compleja. Motores gráficos como Unreal Engine y Unity permiten a los desarrolladores crear mundos virtuales interactivos y detallados.</p>
+                
+                <img src="games.jpg" alt="Videojuegos y setup gamer" width="100%">
+                
+                <p><strong>Enlace relacionado:</strong> <a href="https://www.unrealengine.com/" target="_blank" rel="noopener noreferrer">Sitio oficial de Unreal Engine</a></p>
+                
+                <p><strong>Video explicativo:</strong></p>
+                <iframe width="100%" height="315" 
+                    src="https://www.youtube.com/embed/L_A6B1j14_E" 
+                    title="Cómo se hacen los videojuegos" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </article>
         </aside>
+
         <aside class="secundario">
-            <img src="IA.jpg" alt="Inteligencia Artificial" style="width: 100%; border-radius: 4px;">
+            <h3>Navegación rápida</h3>
+            <p>Explora más sobre mi trayectoria académica y otros temas dentro de este sitio web desarrollado para la materia de <i>Programación en Internet I</i>.</p>
         </aside>
     </section>
+
     <footer>
-        <img src="logo gold.png" alt="Logo UdeC">
+        <img src="logo gold.png" alt="Logo Universidad de Colima">
         <div>
             <p><strong>Universidad de Colima</strong></p>
             <p>Bachillerato 8</p>
-            <p>Programación en internet</p>
+            <p>Programacion en internet</p>
         </div>
     </footer>
 </body>
