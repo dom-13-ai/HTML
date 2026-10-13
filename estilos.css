@@ -157,3 +157,19 @@ section {
     border-radius: 4px;
     margin-top: 10px;
 }
+
+.boton-inicio {
+    display: inline-block;
+    background-color: #ff6b00;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.boton-inicio:hover {
+    background-color: #160e17;
+}

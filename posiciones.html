@@ -1,145 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Práctica de Posiciones CSS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f9;
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    .section {
-      background: #ffffff;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .box {
-      width: 100px;
-      height: 100px;
-      color: white;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 4px;
-    }
-
-    .box-orange { background-color: orange; }
-    .box-blue { background-color: lightskyblue; color: #333; }
-
-    /* 1. Static: Valor por defecto */
-    .static-demo .box-blue {
-      position: static;
-    }
-
-    /* 2. Relative: Se desplaza respecto a su posición original */
-    .relative-demo .box-orange {
-      position: relative;
-      top: 20px;
-      left: 30px;
-    }
-
-    /* 3. Absolute: Relativo a su contenedor padre posicionado */
-    .container-absolute {
-      position: relative;
-      background-color: #e0e0e0;
-      height: 160px;
-      padding: 10px;
-      border: 1px dashed #999;
-    }
-
-    .container-absolute .box-orange {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-
-    /* 4. Fixed: Se mantiene fijo relativo a la ventana (viewport) */
-    .box-fixed {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #28a745;
-      padding: 15px;
-      color: white;
-      border-radius: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-
-    /* 5. Sticky: Mezcla entre relative y fixed al hacer scroll */
-    .sticky-header {
-      position: sticky;
-      top: 0;
-      background-color: #ff5722;
-      color: white;
-      padding: 12px;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 4px;
-      z-index: 100;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Práctica de Posiciones</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-  <!-- Elemento Fixed flotante -->
-  <div class="box-fixed">Posición Fixed</div>
-
-  <h1>Práctica: Propiedad Position en CSS</h1>
-  <p>Ejemplos de posicionamiento basados en la lección de freeCodeCamp.</p>
-
-  <!-- Ejercicio 1: Static -->
-  <div class="section">
-    <h2>1. Position: Static</h2>
-    <p>Es el valor predeterminado. Los elementos siguen el flujo normal del documento.</p>
-    <div class="static-demo">
-      <div class="box box-orange">Naranja</div>
-      <div class="box box-blue">Estático</div>
-    </div>
-  </div>
-
-  <!-- Ejercicio 2: Relative -->
-  <div class="section">
-    <h2>2. Position: Relative</h2>
-    <p>El elemento naranja se mueve en relación a su posición original (top: 20px, left: 30px).</p>
-    <div class="relative-demo">
-      <div class="box box-orange">Relativo</div>
-      <div class="box box-blue">Azul</div>
-    </div>
-  </div>
-
-  <!-- Ejercicio 3: Absolute -->
-  <div class="section">
-    <h2>3. Position: Absolute</h2>
-    <p>El elemento naranja se posiciona de forma absoluta respecto al contenedor gris (su padre relativo).</p>
-    <div class="container-absolute">
-      <div class="box box-orange">Absoluto</div>
-      <div class="box box-blue">Azul</div>
-    </div>
-  </div>
-
-  <!-- Ejercicio 4 y 5: Sticky y Fixed -->
-  <div class="section" style="height: 350px; overflow-y: auto;">
-    <h2>4. Position: Sticky</h2>
-    <p>Haz scroll dentro de esta sección para ver cómo el encabezado rojo se adhiere a la parte superior.</p>
-    <div class="sticky-header">¡Elemento Sticky!</div>
-    <p style="margin-top: 100px;">Contenido de prueba para generar scroll...</p>
-    <p style="margin-top: 100px;">Más contenido de prueba...</p>
-  </div>
-
-  <p><a href="index.html">&larr; Volver al menú principal</a></p>
-
+    <header><img src="black-hole.jpg" alt="Encabezado"></header>
+    <nav>
+        <ul>
+            <li><a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercer parcial</a>
+                <ul>
+                    <li><a href="#">Práctica uno</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <aside class="principal">
+            <h2>Práctica de Posiciones CSS</h2>
+            <p>En este apartado se aplican las propiedades de posicionamiento CSS para maquetar elementos dentro del sitio.</p>
+            
+            <br><hr><br>
+            <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+        </aside>
+        <aside class="secundario">
+        </aside>
+    </section>
+    <footer>
+        <img src="logo gold.png" alt="Logo UdeC">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en internet</p>
+        </div>
+    </footer>
 </body>
 </html>
