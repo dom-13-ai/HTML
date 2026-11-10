@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de temperaturas - Tecnologías Digitales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos específicos para la tarjeta del conversor */
+        .converter-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #d4c5d8;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #160e17;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ff6b00;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .btn-convertir {
+            width: 100%;
+            background-color: #ff6b00;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-convertir:hover {
+            background-color: #160e17;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-left: 4px solid #ff6b00;
+            color: #261424;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="black-hole.jpg" alt="Encabezado"></header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercer parcial</a>
+                <ul>
+                    <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside class="principal">
+            <h2>CONVERSOR DE TEMPERATURAS</h2>
+            <p>Ingresa un valor, selecciona la unidad de origen y destino, y presiona el botón para calcular la conversión.</p>
+            
+            <div class="converter-box">
+                <div class="form-group">
+                    <label for="temperatura">Temperatura:</label>
+                    <input type="number" id="temperatura" step="any" placeholder="Ej. 30">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoConversion">Tipo de conversión:</label>
+                    <select id="tipoConversion">
+                        <option value="cToF">Celsius a Fahrenheit</option>
+                        <option value="fToC">Fahrenheit a Celsius</option>
+                    </select>
+                </div>
+
+                <button id="btnConvertir" class="btn-convertir">Convertir</button>
+            </div>
+
+            <div id="resultado"></div>
+
+            <br><hr><br>
+            <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+        </aside>
+
+        <aside class="secundario">
+            <h3>Información</h3>
+            <p>Esta aplicación utiliza JavaScript para capturar datos, validar entradas mediante <code>alert()</code> y realizar fórmulas matemáticas en tiempo real.</p>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logo gold.png" alt="Logo UdeC">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en internet</p>
+        </div>
+    </footer>
+
+    <script src="temperaturas.js"></script>
+</body>
+</html>
