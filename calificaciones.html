@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de evaluación de calificaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header><img src="black-hole.jpg" alt="Encabezado"></header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercer parcial</a>
+                <ul>
+                    <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                    <li><a href="calificaciones.html">Sistema de calificaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside class="principal">
+            <h2>Sistema de evaluación de calificaciones</h2>
+            <p>Ingresa el nombre del estudiante y sus tres calificaciones (en escala de 0 a 10) para calcular su promedio y desempeño.</p>
+
+            <hr>
+
+            <form id="formCalificaciones" class="formulario-calificaciones">
+                <div class="campo-form">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" placeholder="Ej. Ana Sofía Ramírez">
+                </div>
+
+                <div class="fila-notas">
+                    <div class="campo-form">
+                        <label for="cal1">Calificación 1:</label>
+                        <input type="number" id="cal1" min="0" max="10" step="0.1" placeholder="0 - 10">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="cal2">Calificación 2:</label>
+                        <input type="number" id="cal2" min="0" max="10" step="0.1" placeholder="0 - 10">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="cal3">Calificación 3:</label>
+                        <input type="number" id="cal3" min="0" max="10" step="0.1" placeholder="0 - 10">
+                    </div>
+                </div>
+
+                <button type="button" class="boton-calcular" onclick="calcularPromedio()">Calcular promedio</button>
+            </form>
+
+            <!-- Espacio para mostrar los resultados -->
+            <div id="panelResultados" class="panel-resultados">
+                <h3>Resultados obtenidos</h3>
+                <p><strong>Estudiante:</strong> <span id="resNombre"></span></p>
+                <p><strong>Calificaciones registradas:</strong> <span id="resCalificaciones"></span></p>
+                <p><strong>Promedio obtenido:</strong> <span id="resPromedio"></span></p>
+                <p><strong>Estado:</strong> <span id="resEstado" class="estado-badge"></span></p>
+                <p><strong>Observación:</strong> <span id="resObservacion"></span></p>
+            </div>
+
+            <br><hr><br>
+            <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+        </aside>
+
+        <aside class="secundario">
+            <h3>Criterios de Evaluación</h3>
+            <p>Escala de observaciones según el promedio final obtenido:</p>
+            <table class="tabla-criterios">
+                <thead>
+                    <tr>
+                        <th>Promedio</th>
+                        <th>Observación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9 a 10</td>
+                        <td>Excelente desempeño</td>
+                    </tr>
+                    <tr>
+                        <td>8 a 8.9</td>
+                        <td>Muy buen desempeño</td>
+                    </tr>
+                    <tr>
+                        <td>7 a 7.9</td>
+                        <td>Buen desempeño</td>
+                    </tr>
+                    <tr>
+                        <td>6 a 6.9</td>
+                        <td>Desempeño suficiente</td>
+                    </tr>
+                    <tr>
+                        <td>Menor que 6</td>
+                        <td>Necesita mejorar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logo gold.png" alt="Logo UdeC">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en internet</p>
+        </div>
+    </footer>
+
+    <script src="calificaciones.js"></script>
+</body>
+</html>
